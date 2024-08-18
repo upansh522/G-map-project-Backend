@@ -16,7 +16,7 @@ router.post('/frontend', async (req, res) => {
                 destination: { lat: destination.lat, lng: destination.lng },
                 key: process.env.GOOGLE_MAPS_API_KEY, 
             },
-            timeout: 10000
+            timeout: 3000
         });
 
         const { routes } = response.data;
